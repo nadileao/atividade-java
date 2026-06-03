@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Calculadora {
+public class Calculadora1 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -18,6 +18,7 @@ public class Calculadora {
         System.out.println("2 - Subtração");
         System.out.println("3 - Multiplicação");
         System.out.println("4 - Divisão");
+        System.out.println("5 - Potenciação");
         System.out.print("Opção: ");
 
         int opcao = scanner.nextInt();
@@ -46,6 +47,11 @@ public class Calculadora {
                 } else {
                     System.out.println("Erro: divisão por zero não é permitida.");
                 }
+                break;
+
+            case 5:
+                resultado = Math.pow(num1, num2);
+                System.out.println("Resultado: " + resultado);
                 break;
 
             default:
